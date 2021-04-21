@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>oms.model.xml</DocumentationFile>
+    <OutputPath>.\oms.model</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="oms.model\**" />
+    <EmbeddedResource Remove="oms.model\**" />
+    <None Remove="oms.model\**" />
+  </ItemGroup>
+
+</Project>

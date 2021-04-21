@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>oms.model</name>
+    </assembly>
+    <members>
+        <member name="T:oms.model.ConfigModel">
+            <summary>
+            ConfigModel
+            </summary>
+        </member>
+        <member name="T:oms.model.OperationsConfig">
+            <summary>
+            运维配置参数
+            </summary>
+        </member>
+        <member name="P:oms.model.OperationsConfig.Name">
+            <summary>
+            运维名称
+            </summary>
+        </member>
+        <member name="P:oms.model.OperationsConfig.PeriodSeconds">
+            <summary>
+            执行周期
+            </summary>
+        </member>
+        <member name="P:oms.model.OperationsConfig.Git">
+            <summary>
+            git信息
+            </summary>
+        </member>
+        <member name="P:oms.model.OperationsConfig.AtTime">
+            <summary>
+            在某时刻执行
+            </summary>
+        </member>
+        <member name="P:oms.model.OperationsConfig.TimeoutSeconds">
+            <summary>
+            超时时间
+            </summary>
+        </member>
+        <member name="P:oms.model.OperationsConfig.FaildTryTimes">
+            <summary>
+            失败尝试次数
+            </summary>
+        </member>
+        <member name="T:oms.model.CONST">
+            <summary>
+            Const
+            </summary>
+        </member>
+        <member name="F:oms.model.CONST.WindowsCmdPath">
+            <summary>
+            Windows cmd path
+            </summary>
+        </member>
+        <member name="T:oms.model.EncodingEnum">
+            <summary>
+            字符编码Enum
+            </summary>
+        </member>
+        <member name="F:oms.model.EncodingEnum.Default">
+            <summary>
+            默认
+            </summary>
+        </member>
+        <member name="F:oms.model.EncodingEnum.UTF8">
+            <summary>
+            UTF8
+            </summary>
+        </member>
+        <member name="F:oms.model.EncodingEnum.Unicode">
+            <summary>
+            Unicode
+            </summary>
+        </member>
+        <member name="F:oms.model.EncodingEnum.ASCII">
+            <summary>
+            ASCII
+            </summary>
+        </member>
+        <member name="T:oms.model.EncodingCommon">
+            <summary>
+            Encoding 帮助类
+            </summary>
+        </member>
+        <member name="M:oms.model.EncodingCommon.GetByValue(System.Int32)">
+            <summary>
+            根据id获取Encoding
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:oms.model.EncodingCommon.GetByName(System.String)">
+            <summary>
+            根据id获取Encoding
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:oms.model.GitInfoModel">
+            <summary>
+            GitInfo
+            </summary>
+        </member>
+        <member name="P:oms.model.GitInfoModel.RepositoryUrl">
+            <summary>
+            仓库地址
+            </summary>
+        </member>
+        <member name="P:oms.model.GitInfoModel.Brand">
+            <summary>
+            仓库分支
+            </summary>
+        </member>
+        <member name="P:oms.model.GitInfoModel.Pwd">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:oms.model.GitInfoModel.Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="T:oms.model.CommandInput">
+            <summary>
+            命令行
+            </summary>
+        </member>
+        <member name="P:oms.model.CommandInput.WorkingDirectory">
+            <summary>
+            命令行工作目录
+            </summary>
+        </member>
+        <member name="P:oms.model.CommandInput.AppFileName">
+            <summary>
+            可直接执行的文件
+            <para>如果时cmd原生命令则可为空</para>
+            <para>如果是ftp.exe osql.exe等的执行完命令不及时退出的命令行工具,则需要指定该路径,且是直接启动</para>
+            </summary>
+        </member>
+        <member name="P:oms.model.CommandInput.Arguments">
+            <summary>
+            打开命令时的参数
+            </summary>
+        </member>
+        <member name="P:oms.model.CommandInput.StandardOutputEncoding">
+            <summary>
+            输出Encoding
+            </summary>
+        </member>
+        <member name="P:oms.model.CommandInput.StandardErrorEncoding">
+            <summary>
+            错误输出Encoding
+            </summary>
+        </member>
+        <member name="P:oms.model.CommandInput.StandardInputEncoding">
+            <summary>
+            输入Encoding
+            <para>输入不能用UTF8, cmd不支持</para>
+            </summary>
+        </member>
+        <member name="P:oms.model.CommandInput.Commands">
+            <summary>
+            待执行的命令
+            </summary>
+        </member>
+        <member name="T:oms.model.Result`1">
+            <summary>
+            ResultModel
+            </summary>
+        </member>
+        <member name="M:oms.model.Result`1.#ctor(oms.model.ResultCodeEnum,System.Boolean,System.String,`0)">
+            <summary>
+            ctor
+            </summary>
+            <param name="code"></param>
+            <param name="success"></param>
+            <param name="message"></param>
+            <param name="data"></param>
+        </member>
+        <member name="P:oms.model.Result`1.Code">
+            <summary>
+            正确或错误代码
+            </summary>
+        </member>
+        <member name="P:oms.model.Result`1.Success">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:oms.model.Result`1.Message">
+            <summary>
+            正确或错误信息
+            </summary>
+        </member>
+        <member name="P:oms.model.Result`1.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="M:oms.model.Result`1.Ok(`0)">
+            <summary>
+            正确数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:oms.model.Result`1.Bad(System.String)">
+            <summary>
+            错误数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:oms.model.ResultCodeEnum">
+            <summary>
+            结果返回类型
+            </summary>
+        </member>
+        <member name="F:oms.model.ResultCodeEnum.Success">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="F:oms.model.ResultCodeEnum.Fail">
+            <summary>
+            失败
+            </summary>
+        </member>
+    </members>
+</doc>

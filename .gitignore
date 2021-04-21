@@ -1,0 +1,10 @@
+.vs/
+oms.model/obj/
+oms.service/bin/
+oms.service/obj/
+oms_server/bin/
+oms_server/obj/
+oms.model/bin/
+oms.model/oms.model/net5.0/
+oms_server/oms_server/net5.0/appsettings.Development.json
+oms_server/oms_server/net5.0/

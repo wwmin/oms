@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>oms_server</name>
+    </assembly>
+    <members>
+        <member name="T:oms_server.Controllers.OmsController">
+            <summary>
+            运维平台api
+            </summary>
+        </member>
+    </members>
+</doc>
